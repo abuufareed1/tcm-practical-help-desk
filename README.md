@@ -1,18 +1,16 @@
-# TCM Practical Help Desk: Ticket Writeups
+# 🛠️ TCM Practical Help Desk - Hands-on IT Support & Active Directory Lab
 
-My writeups for the ticket-style exercises in the **TCM Security Practical Help Desk** course. Each writeup has the ticket, the commands I used, how I verified the result, and anything that tripped me up.
+Welcome to my repository detailing practical hands-on labs, domain administration, and troubleshooting workflows completed during the **TCM Security Practical Help Desk** course. 
 
-## Tickets
+This repository documents the deployment of an enterprise-style VirtualBox lab, Active Directory (AD) administration, Group Policy Object (GPO) deployment, core networking diagnostics, and real-world ticketing lifecycle simulations.
 
-| # | Ticket | Topics |
-|---|--------|--------|
-| 01 | [Add users and create a Confidential folder](tickets/01-add-users-and-confidential-folder.md) | Linux users, password expiry, groups, ownership, permissions |
+---
 
-## Environment
+## 📐 Lab Architecture & Setup
 
-- Ubuntu (VM)
-- All commands run from the terminal with `sudo`
+The entire lab environment was built from scratch within **Oracle VM VirtualBox** to simulate a small enterprise IT environment.
 
-## About
-
-Part of my IT support learning journey. My SOC / cybersecurity work lives in a separate repo.
+### Environment Topology
+* **Domain Controller (DC):** Windows Server 2022 (`DC01` / Domain: `corp.local`)
+* **Client Workstation:** Windows 11 Enterprise (`WS01` joined to `corp.local`)
+* **Hypervisor:** Oracle VM VirtualBox (Internal Network / NAT adapter setups)
